@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orflax - German Technology Wires & Cables</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1rem;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 3rem;
+            color: #ffd700;
+            text-shadow: 3px 3px 0 #ffffff;
+        }
+        .nav {
+            margin-top: 1rem;
+        }
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 2px solid #ffd700;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #ffd700;
+            color: #000000;
+        }
+        .cta-button {
+            background-color: #ffd700;
+            color: #000000;
+            padding: 0.5rem 1rem;
+            border: 3px solid #000000;
+            font-size: 1.2rem;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 5px 5px 0 #000000;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            box-shadow: 3px 3px 0 #000000;
+            transform: translate(2px, 2px);
+        }
+        .hero {
+            background-color: #ffd700;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid #000000;
+        }
+        .hero h1 {
+            color: #000000;
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        .section {
+            padding: 3rem 1rem;
+            border-bottom: 5px solid #000000;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .why-choose-us {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            background-color: #ffffff;
+        }
+        .why-choose-us div {
+            background-color: #ffd700;
+            padding: 1rem;
+            border: 3px solid #000000;
+        }
+        .products {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .products ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .products li {
+            background-color: #ffd700;
+            color: #000000;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .director-photo {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">OIPI</div>
+            <nav class="nav">
+                <a href="#home" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Home</a>
+                <a href="#about" onmouseover="changeColor(this)" onmouseout="resetColor(this)">About</a>
+                <a href="#directors" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Director's Message</a>
+                <a href="#products" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Products</a>
+                <a href="#gallery" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Gallery</a>
+                <a href="#contact" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Orflax</h1>
+            <p>A German Technology - Wires & Cables</p>
+            <p>World's Leading Cable Wire Industry</p>
+            <button class="cta-button" onclick="callNow()">Call Now</button>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>15 Long Years</p>
+            <p>ORFLAX INDIA PVT LTD is dedicated to excel in the research, development, and production of wires and cables for electrical and electronic applications.</p>
+            <p>We are a North India based business group with a wide range of copper and aluminium wires & cables.</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </section>
+
+    <section class="section" id="directors">
+        <div class="container">
+            <h2>Director's Message</h2>
+            <p>At Orflax, we are driven by innovation and quality. Our goal is to deliver the best-in-class wires and cables that meet international standards and fulfill our clients’ expectations.</p>
+            <img src="https://orflaxindia.com/wp-content/uploads/2023/06/rajneesh.jpg" alt="Director" class="director-photo">
+        </div>
+    </section>
+
+    <section class="section products" id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <ul>
+                <li>MULTISTAND WIRES (NEXA SERIES)</li>
+                <li>SUBMERSIBLE CABLES</li>
+                <li>MULTICORE ROUND CABLE</li>
+                <li>ALUMINIMUM ROUND CABLE</li>
+                <li>ALUMINIMUM SERVICE CABLE</li>
+                <li>PARALLEL FLET CABLE</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://orflaxindia.com/wp-content/uploads/2023/06/Factory-Image-1.jpg" alt="Gallery Image 1">
+                <img src="https://orflaxindia.com/wp-content/uploads/2023/06/Factory-Image-2.jpg" alt="Gallery Image 2">
+                <img src="https://orflaxindia.com/wp-content/uploads/2023/06/Factory-Image-3.jpg" alt="Gallery Image 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@orflaxindia.com">info@orflaxindia.com</a></p>
+            <p>Phone: <a href="tel:+919999999999">+91-9999999999</a></p>
+            <p>Address: Jhilmil Industrial Area, Delhi, India</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>All rights reserved by OrflaxIndia.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to display an alert when the "Call Now" button is clicked
+        function callNow() {
+            alert('Calling Orflax...');
+        }
+
+        // Function to change the color of navigation links on hover
+        function changeColor(element) {
+            element.style.color = '#ffd700';
+        }
+
+        // Function to reset the color of navigation links when not hovered
+        function resetColor(element) {
+            element.style.color = '#ffffff';
+        }
+
+        // Function to smoothly scroll to sections
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
